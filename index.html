@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gurman Singh | Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, .9);
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px;
+            z-index: 1000
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s
+        }
+
+        nav a:hover {
+            color: #a78bfa
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #1e3a8a, #7c3aed)
+        }
+
+        header img {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 20px;
+            transition: .4s
+        }
+
+        header img:hover {
+            transform: scale(1.1)
+        }
+
+        header h1 {
+            font-size: 2.8rem
+        }
+
+        section {
+            padding: 90px 20px;
+            max-width: 1100px;
+            margin: auto
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #a78bfa
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px
+        }
+
+        .card {
+            background: #1e293b;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: .4s
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, .5)
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: #7c3aed;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            transition: .3s
+        }
+
+        .btn:hover {
+            background: #a78bfa
+        }
+
+        .skill i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #a78bfa
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px
+        }
+
+        /* Scroll Animation */
+        .hidden {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s
+        }
+
+        .show {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <!-- <p><a href="#" style="display: flex; justify-content: space-between;">Gurman Singh </a></p> -->
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+        <img src="/G2.jpg" alt="Gurman Singh">
+        <h1>Gurman Singh</h1>
+        <p>Frontend Developer | AI/ML Enthusiast</p>
+    </header>
+
+    <section id="about" class="hidden">
+        <h2>About Me</h2>
+        <p style="text-align:center;max-width:700px;margin:auto">I am a Computer Science and Engineering student
+            specializing in Artificial Intelligence and Machine Learning, with a strong interest in frontend development
+            and modern web technologies. I enjoy building clean, responsive, and user-friendly web interfaces using
+            HTML, CSS, JavaScript, and React. Alongside my academic learning, I actively work on practical projects to
+            strengthen my technical skills and problem-solving abilities. I am passionate about continuous learning and
+            aim to develop innovative solutions that combine intelligent systems with intuitive user experiences.</p>
+    </section>
+
+    <section id="skills" class="hidden">
+        <h2>Skills</h2>
+        <div class="grid">
+            <div class="card skill">
+                <div class="card-content"><i class="fab fa-html5"></i>
+                    <p>HTML</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fab fa-css3-alt"></i>
+                    <p>CSS</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fas fa-code"></i>
+                    <p>C / C++</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fab fa-github"></i>
+                    <p>GitHub</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fas fa-database"></i>
+                    <p>SQL</p>
+                </div>
+            </div>
+            <div class="card skill">
+                <div class="card-content"><i class="fas fa-leaf"></i>
+                    <p>MongoDB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="hidden">
+        <h2>Projects</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="/image.png">
+                <div class="card-content">
+                    <h3>E-commerce Website</h3>
+                    <p>Full shopping UI with cart & product system.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/image copy.png">
+                <div class="card-content">
+                    <h3>Student Management System</h3>
+                    <p>Manage student records efficiently.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/Screenshot (147).png">
+                <div class="card-content">
+                    <h3>Weather Forecast App</h3>
+                    <p>Real-time weather updates with API.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/image copy 2.png">
+                <div class="card-content">
+                    <h3>Online Shopping Site</h3>
+                    <p>Responsive UI with modern design.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/image copy 3.png">
+                <div class="card-content">
+                    <h3>Animation Website</h3>
+                    <p>Advanced CSS animations & transitions.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <p style="text-align:center">gurmansingh01@myyahoo.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Gurman Singh | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+        document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
