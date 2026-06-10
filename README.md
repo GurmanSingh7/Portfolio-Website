@@ -1,5 +1,5 @@
 <div align="center">
-
+  
 # 🚀 Gurman Singh Portfolio
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=32&pause=1000&color=00E5FF&center=true&vCenter=true&width=1000&lines=Welcome+to+My+Portfolio;Gurman+Singh+-+CSE+AIML+Student;Full+Stack+Developer;AI+%26+Machine+Learning+Enthusiast;Building+Innovative+Digital+Experiences" />
