@@ -42,7 +42,7 @@ Passion:
 ✨ Smooth Page Transitions
 
 ✨ Responsive Layout
-
+  
 ✨ GSAP Animations
 
 ✨ Framer Motion Effects
